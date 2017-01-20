@@ -32,14 +32,14 @@ c.run as application<br/>
 a.把所有需要的文件放到一个文件夹A中，需要把java文件顶部的package去掉，不然会出错。<br/>
 b.打开cmd命令窗口，切换到文件夹A下，命令cd C:/...<br/>
 c.根据上面提示所需要的文件：<br/>
-如果需要的jar文件只有一个：ant-1.6.5.jar,run command: <br/>
+如果需要的jar文件只有一个：ant-1.6.5.jar,run command:
 <pre>
-javac -classpath ./ant-1.6.5.jar ZipFile.java<br/>
-java -classpath .;./ant-1.6.5.jar ZipFile<br/>
+javac -classpath ./ant-1.6.5.jar ZipFile.java
+java -classpath .;./ant-1.6.5.jar ZipFile
 </pre>
-如果需要的jar文件有两个：junrar-0.7.jar,commons-logging.jar,run command:<br/>
+如果需要的jar文件有两个：junrar-0.7.jar,commons-logging.jar,run command:
 <pre>
-javac -classpath ./junrar-0.7.jar;commons-logging.jar UncodeRar.java<br/>
-java -classpath .;./junrar-0.7.jar;commons-logging.jar UncodeRar<br/>
+javac -classpath ./junrar-0.7.jar;commons-logging.jar UncodeRar.java
+java -classpath .;./junrar-0.7.jar;commons-logging.jar UncodeRar
 </pre>
 [注]命令最后的java文件根据你跑的文件而定。
