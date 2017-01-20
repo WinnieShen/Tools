@@ -4,7 +4,25 @@
 ####压缩文件成zip格式：ZipFile.java,ant-1.6.5.jar####
 ####解压zip文件：UnZip.java,ant-1.6.5.jar####
 ####解压rar文件：UncodeRar.java,junrar-0.7.jar,commons-logging.jar####
-##2.运行方法##
+##2.修改code中的压缩/解压缩路径##
+####java文件中定义的final常量，如下：####
+a.ZipFile.java中：<br/>
+<pre style="background-color:black;color:white;">
+private static final File WILL_BE_ZIPED_FILE_1 =new File("C:\\Users\\shenw1\\Downloads\\201605017.rar");
+private static final File WILL_BE_ZIPED_FILE_2 =new File("C:\\Users\\shenw1\\Downloads\\201605018.rar");
+private static String NEW_ZIP_FILE = "C:\\codes\\unRar\\new.zip";
+</pre>
+b.UnZip.java中：<br/>
+<pre style="background-color:black;color:white;">
+private static final String OLD_FILE = "C:\\codes\\unRar\\new.zip";
+private static final String UNZIP_OLD_FILE_TO_PATH = "C:\\codes\\unRar\\test\\";
+</pre>
+c.UncodeRar.java中：<br/>
+<pre style="background-color:black;color:white;">
+private static final String OLD_RAR_FILE = "C:\\Users\\shenw1\\Downloads\\201605017.rar";
+private static final String DIRECTORY_PATH = "C:\\codes\\unRar";
+</pre>
+##3.运行方法##
 ####eclipse运行####
 a.如果你有eclipse,可以直接copy文件到你的project中去，注意java顶部的package哦。<br/>
 b.把需要的jar包放到reference Libraries中去，具体的应该都知道，build path->...<br/>
