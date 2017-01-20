@@ -5,23 +5,37 @@
 ####解压zip文件：UnZip.java,ant-1.6.5.jar####
 ####解压rar文件：UncodeRar.java,junrar-0.7.jar,commons-logging.jar####
 ##2.修改code中的压缩/解压缩路径##
-####java文件中定义的final常量，如下：####
-a.ZipFile.java中：<br/>
+####java文件中定义的final常量，可以根据具体情况而修改，如下：####
+#####ZipFile.java中：#####
 <pre>
 private static final File WILL_BE_ZIPED_FILE_1 =new File("C:\\Users\\shenw1\\Downloads\\201605017.rar");
 private static final File WILL_BE_ZIPED_FILE_2 =new File("C:\\Users\\shenw1\\Downloads\\201605018.rar");
 private static String NEW_ZIP_FILE = "C:\\codes\\unRar\\new.zip";
 </pre>
-b.UnZip.java中：<br/>
+WILL_BE_ZIPED_FILE_1,WILL_BE_ZIPED_FILE_2：需要被压缩的文件，如果只有一个，写一个就行，有多个可以再加。<br/>
+NEW_ZIP_FILE:定义压缩后文件的名字与路径。
+main函数中有：
+<pre>
+File[] zipFile = {WILL_BE_ZIPED_FILE_1};
+</pre>
+如果是多个文件写法是：
+<pre>
+File[] zipFile = {WILL_BE_ZIPED_FILE_1,WILL_BE_ZIPED_FILE_2,WILL_BE_ZIPED_FILE_3,...};
+</pre>
+#####UnZip.java中：#####
 <pre>
 private static final String OLD_FILE = "C:\\codes\\unRar\\new.zip";
 private static final String UNZIP_OLD_FILE_TO_PATH = "C:\\codes\\unRar\\test\\";
 </pre>
-c.UncodeRar.java中：<br/>
+OLD_FILE:要解压的文件路径以及文件名<br/>
+UNZIP_OLD_FILE_TO_PATH：解压到的目录
+#####UncodeRar.java中：#####
 <pre>
 private static final String OLD_RAR_FILE = "C:\\Users\\shenw1\\Downloads\\201605017.rar";
 private static final String DIRECTORY_PATH = "C:\\codes\\unRar";
 </pre>
+OLD_RAR_FILE：需要解压的rar文件路径和文件名<br/>
+DIRECTORY_PATH：解压到的目录
 ##3.运行方法##
 ####eclipse运行####
 <ul>
