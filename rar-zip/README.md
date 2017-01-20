@@ -14,8 +14,8 @@ a.把所有需要的文件放到一个文件夹A中，需要把java文件顶部�
 b.打开cmd命令窗口，切换到文件夹A下，命令cd C:/...<br/>
 c.根据上面提示所需要的文件：<br/>
 如果需要的jar文件只有一个：ant-1.6.5.jar<br/>
-run command: javac -classpath ./junrar-0.7.jar;commons-logging.jar ZipFile.java(这一步是编译)<br/>
-run command: java -classpath .;./junrar-0.7.jar;commons-logging.jar ZipFile<br/>
+run command: javac -classpath ./ant-1.6.5.jar ZipFile.java(这一步是编译)<br/>
+run command: java -classpath .;./ant-1.6.5.jar ZipFile<br/>
 如果需要的jar文件有两个：junrar-0.7.jar,commons-logging.jar<br/>
 run command: javac -classpath ./junrar-0.7.jar;commons-logging.jar UncodeRar.java(这一步是编译)<br/>
 run command: java -classpath .;./junrar-0.7.jar;commons-logging.jar UncodeRar<br/>
