@@ -10,7 +10,7 @@ a.如果你有eclipse,可以直接copy文件到你的project中去，注意java�
 b.把需要的jar包放到reference Libraries中去，具体的应该都知道，build path->...<br/>
 c.run as application<br/>
 ####在命令行运行####
-a.把所有需要的文件放到一个文件夹A中<br/>
+a.把所有需要的文件放到一个文件夹A中，需要把java文件顶部的package去掉，不然会出错。<br/>
 b.打开cmd命令窗口，切换到文件夹A下，命令cd C:/...<br/>
 c.根据上面提示所需要的文件：<br/>
 如果需要的jar文件只有一个：ant-1.6.5.jar<br/>
