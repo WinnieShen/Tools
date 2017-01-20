@@ -13,7 +13,7 @@ private static final File WILL_BE_ZIPED_FILE_2 =new File("C:\\Users\\shenw1\\Dow
 private static String NEW_ZIP_FILE = "C:\\codes\\unRar\\new.zip";
 </pre>
 WILL_BE_ZIPED_FILE_1,WILL_BE_ZIPED_FILE_2：需要被压缩的文件，如果只有一个，写一个就行，有多个可以再加。<br/>
-NEW_ZIP_FILE:定义压缩后文件的名字与路径。
+NEW_ZIP_FILE:定义压缩后文件的名字与路径。<br/>
 main函数中有：
 <pre>
 File[] zipFile = {WILL_BE_ZIPED_FILE_1};
@@ -27,18 +27,17 @@ File[] zipFile = {WILL_BE_ZIPED_FILE_1,WILL_BE_ZIPED_FILE_2,WILL_BE_ZIPED_FILE_3
 private static final String OLD_FILE = "C:\\codes\\unRar\\new.zip";
 private static final String UNZIP_OLD_FILE_TO_PATH = "C:\\codes\\unRar\\test\\";
 </pre>
-OLD_FILE:要解压的文件路径以及文件名<br/>
-UNZIP_OLD_FILE_TO_PATH：解压到的目录
+OLD_FILE:要解压的文件路径以及文件名。<br/>
+UNZIP_OLD_FILE_TO_PATH：解压到的目录。
 #####UncodeRar.java中：#####
 <pre>
 private static final String OLD_RAR_FILE = "C:\\Users\\shenw1\\Downloads\\201605017.rar";
 private static final String DIRECTORY_PATH = "C:\\codes\\unRar";
 </pre>
-OLD_RAR_FILE：需要解压的rar文件路径和文件名<br/>
-DIRECTORY_PATH：解压到的目录
+OLD_RAR_FILE：需要解压的rar文件路径和文件名。<br/>
+DIRECTORY_PATH：解压到的目录。
 ##3.运行方法##
 ####eclipse运行####
-<ul>
 a.如果你有eclipse,可以直接copy文件到你的project中去，注意java顶部的package哦。<br/>
 b.把需要的jar包放到reference Libraries中去，具体的应该都知道，build path->...<br/>
 c.run as application<br/>
