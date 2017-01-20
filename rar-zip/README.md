@@ -39,14 +39,14 @@ private static final String OLD_RAR_FILE = "C:\\Users\\shenw1\\Downloads\\201605
 private static final String DIRECTORY_PATH = "C:\\codes\\unRar";
 </pre>
 <pre>
-OLD_RAR_FILE：需要解压的rar文件路径和文件名。<br/>
+OLD_RAR_FILE：需要解压的rar文件路径和文件名。
 DIRECTORY_PATH：解压到的目录。
 </pre>
 ##3.运行方法##
 ####eclipse运行：####
 <pre>
-a.如果你有eclipse,可以直接copy文件到你的project中去，注意java顶部的package哦。
-b.把需要的jar包放到reference Libraries中去，具体的应该都知道，build path->...
+a.如果你有eclipse,可以直接copy文件到你的project中去，注意java顶部的package哦。<br/>
+b.把需要的jar包放到reference Libraries中去，具体的应该都知道，build path->...<br/>
 c.run as application
 </pre>
 ####在命令行运行：####
