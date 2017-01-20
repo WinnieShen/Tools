@@ -2,11 +2,8 @@
 这里就不详细说明了，没有学过java的话可以去Google 或者 百度看看配置环境变量，有详细的步骤。
 ##1.你需要的文件：##
 ####压缩文件成zip格式：ZipFile.java,ant-1.6.5.jar####
-<br/>
 ####解压zip文件：UnZip.java,ant-1.6.5.jar####
-<br/>
 ####解压rar文件：UncodeRar.java,junrar-0.7.jar,commons-logging.jar####
-<br/>
 ##2.运行方法##
 ####eclipse运行####
 a.如果你有eclipse,可以直接copy文件到你的project中去，注意java顶部的package哦。<br/>
@@ -21,3 +18,4 @@ run command: java -classpath .;./junrar-0.7.jar;commons-logging.jar ZipFile<br/>
 如果需要的jar文件有两个：junrar-0.7.jar,commons-logging.jar
 run command: javac -classpath ./junrar-0.7.jar;commons-logging.jar UncodeRar.java(这一步是编译)<br/>
 run command: java -classpath .;./junrar-0.7.jar;commons-logging.jar UncodeRar<br/>
+[注]命令最后的java文件根据你跑的文件而定。
